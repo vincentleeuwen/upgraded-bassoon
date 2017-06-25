@@ -30,7 +30,7 @@ class Popular extends React.Component {
               </li>
             )
           }
-        }
+        )}
       </ul>
     )
   }
