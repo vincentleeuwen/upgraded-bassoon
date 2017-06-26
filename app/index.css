@@ -60,3 +60,23 @@ a {
 .active {
   font-weight: bold;
 }
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  text-align: center;
+}
+.button {
+  color: #fff;
+  background: #0a0a0a;
+  padding: 7px 10px;
+  font-weight: bold;
+  border-radius: 4px;
+  display: block;
+  text-align: center;
+  margin: 10px auto;
+}
+.button:active {
+  transform: translateY(1px);
+}
