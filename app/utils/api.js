@@ -54,11 +54,10 @@ function getUserData(player) {
   });
 }
 
-function sortPlayers() {
-  return players.sort(function(a,b)) {
-    // return the player with the highest score
+function sortPlayers (players) {
+  return players.sort(function (a,b) {
     return b.score - a.score;
-  }
+  });
 }
 
 // api.battle(['vincentleeuwen', 'dwightgunning'])
