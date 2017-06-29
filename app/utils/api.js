@@ -1,6 +1,9 @@
 var axios = require('axios');
+var localSettings = require('../../local_settings');
 
-var params = '';
+var id = localSettings.githubId;
+var sec = localSettings.githubSecret;
+var params = "?client_id=" + id + "&client_secret=" + sec;
 
 function getProfile(username) {
   return axios.get('https://api.github.com/users/' + username + params)
